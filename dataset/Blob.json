@@ -1,0 +1,21 @@
+{
+	"name": "Blob",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "BlobStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "stg"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

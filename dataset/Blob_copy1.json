@@ -1,0 +1,22 @@
+{
+	"name": "Blob_copy1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "BlobStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "Input",
+				"container": "stg"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
